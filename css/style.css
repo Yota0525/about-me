@@ -1,0 +1,146 @@
+/* コードの文字化け防止 */
+@charset "UTF-8";
+
+/* htmlに文字サイズ正反映指定 */
+html {font-size:100%;}
+
+/* <body>タグ内に 1=書体指定 2=行高指定 3=色指定 */
+body    {font-family:"Noto Sans JP","Noto Serif JP","M PLUS 1p",sans-serif;
+        line-height:1.7;
+        color:#432;}
+
+/* <a>タグ内に傍線表示指定 */
+a{text-decoration:none;}
+
+/* 画像に最大幅指定 */
+img{max-width:100%;}
+
+/* 「wrapper」クラス内に 1=最大幅指定 2=外側余白指定 3=内側余白指定 */
+.wrapper{max-width:1120px;
+        margin:auto;
+        padding:0 1.5rem;}
+
+/* 「align-center」クラス内に配置指定 */
+.align-center{text-align:center;}
+
+/* 「font-english」クラス内に 1=書体指定 2=文字太さ指定 */
+.font-english   {font-family:"M PLUS 2",sans-serif;
+                font-weight:normal;}
+
+/* 「page-title」「heading-large」クラス内に 1=文字サイズ指定 2=配置指定 */
+.page-title,
+.heading-large  {font-size:3rem;
+                text-align:center;}
+
+/* 「page-title」クラス内に 1=外側上部余白指定 2=行高指定 */
+.page-title     {margin-top:2rem;
+                line-height:1.4;}
+
+/* 「header-large」クラス内に外側下部余白指定 */
+.heading-large{margin-bottom:1rem;}
+
+/* 「btn」クラス内に 1=サイズ認識指定 2=文字サイズ指定 3=背景色指定 4=文字色指定 5=角形状指定 6=内側余白指定 7=背景色変化指定 */
+.btn    {display:inline-block;
+        font-size:1.5rem;
+        background-color:#0bd;
+        color:#fff;
+        border-radius:8px;
+        padding:.75rem 1.5rem;
+        transition:.5s;}
+
+/* 「btn」クラス内にホバー時 1=背景色指定 2=拡大指定 3=角度指定 */
+.btn:hover      {background-color:#0090aa;
+                scale:1.2;
+                rotate:-5deg;}
+
+/* 「page-header」クラス内に内側上部余白指定 */
+.page-header{padding-top:.5rem;}
+
+/* 「logo」クラス内に幅指定 */
+.logo{width:210px;}
+
+/* 「main-nav」クラス内に 1=横並び指定 2=水平配置指定 3=要素間余白指定 4=文字サイズ指定 5=リストマーカー表示指定 */
+.main-nav       {display:flex;
+                justify-content:center;
+                gap:2.5rem;
+                font-size:1.5rem;
+                list-style-type:none;}
+
+/* 「main-nav」クラス内の<a>タグ内に色指定 */
+.main-nav a{color:#432;}
+
+/* 「main-nav」クラス内の<a>タグ内にホバー時色指定 */
+.main-nav a:hover{color:#0bd;}
+
+/* 「cover」クラス内に 1=背景サイズ指定 2=背景配置指定 3=高さ指定 */
+.cover  {background-size:cover;
+        background-position:center bottom;
+        height:800px;}
+
+/* 「sub-cover」クラス内に 1=背景サイズ指定 2=背景位置指定 3=高さ指定 4=外側下部余白指定 */
+.sub-cover      {background-size:cover;
+                background-position:center bottom;
+                height:528px;
+                margin-bottom:4rem;}
+
+/* 「cover-home」クラス内に背景画像指定 */
+.cover-home{background-image:url(../images/blue_back.jpg);}
+
+/* 「about」クラス内に 1=最大幅指定 2=内側余白指定 3=外側余白指定 */
+.about  {max-width:736px;
+        padding:0 1.5rem;
+        margin:3rem auto 4rem;}
+
+/* 「about」クラス内の<p>タグ内に外側下部余白指定 */
+.about p{margin-bottom:3rem;}
+
+/* 「cover-Memory」クラス内に背景画像指定 */
+.cover-Memory{background-image:url(../images/.jpg);}
+
+/* 「page-footer」クラス内に 1=背景画像指定 2=背景サイズ指定 3=背景配置指定 4=内側上部余白指定 */
+.page-footer    {background-image:url(../images/haikei-4.jpg);
+                background-size:cover;
+                background-position:center;
+                padding-top:12rem;}
+
+/* 「info」クラス内に 1=幅指定 2=最大幅指定 3=外側余白指定 4=内側余白指定 5=下線表示指定 */
+.info   {width:100%;
+        max-width:544px;
+        margin:auto;
+        padding:0 1.5rem;
+        border-spacing:0;}
+
+/* 「info」クラス内の<th><td>タグ内に下線の太さ・スタイル・色指定 */
+.info th,
+.info td{border-bottom:1px solid #c9c2bc;}
+
+/* 「info」クラス内の<th>タグ内に 1=文字配置指定 2=文字太さ指定 3=内側余白指定 */
+.info th{text-align:left;
+        font-weight:normal;
+        padding:1rem;}
+
+/* 「info」クラス内の<td>タグ内に内側余白指定 */
+.info td{padding:1rem 0;}
+
+/* 「copyright」クラス内に 1=背景色指定 2=文字位置指定 3=内側余白指定 4=外側上部余白指定 5=文字色指定 */
+.copyright      {background-color:#432;
+                text-align:center;
+                padding:2rem 0;
+                margin-top:6rem;
+                color:#fff;}
+
+/* CSS切り替え設定・画面切り替え位置指定 1=「page-title」クラス内に文字サイズ指定 2=「heading-large」クラス内に文字サイズ指定　
+3=「page-header」クラス内に配置位置指定・内側上部余白指定 4=「main-nav」クラス内に文字サイズ指定
+5=「cover-home」クラス内に背景画像指定 6=「about」クラス内に外側余白指定 
+7=「page-footer」クラス内に背景画像指定・内側上部余白指定 8=「info」クラス内の<th>タグ内に内側左部余白指定 */
+@media(min-width:800px){.page-title{font-size:5rem;}
+                        .heading-large{font-size:4rem;}
+                        .page-header    {display:flex;
+                                        justify-content:space-between;
+                                        padding-top:1.5rem;}
+                        .main-nav{font-size:2rem;}
+                        .cover-home{background-image:url(../images/haikei.jpg);}
+                        .about{margin:4rem auto 0;}
+                        .page-footer    {background-image:url(../images/haikei-2.jpg);
+                                        padding-top:12rem;}
+                        .info th{padding-left:2.5rem;}}

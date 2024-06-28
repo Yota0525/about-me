@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 339 339">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0036f9;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #231815;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #00ff0c;
+      }
+
+      .cls-5 {
+        fill: #000;
+        font-family: MinionVariableConcept-Roman, 'Minion Variable Concept';
+        font-size: 95px;
+        font-variation-settings: 'wght' 400, 'opsz' 11;
+      }
+
+      .cls-3 {
+        fill: #fc0000;
+      }
+
+      .cls-4 {
+        fill: #f1f700;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M169.5.5h1.5c92.44,0,167.5,75.05,167.5,167.5v1.5h-169V.5h0Z"/>
+  <path class="cls-4" d="M169.5,169.5h1.5c92.44,0,167.5,75.05,167.5,167.5v1.5h-169v-169h0Z" transform="translate(508 0) rotate(90)"/>
+  <path class="cls-1" d="M.5,169.5h1.5c92.44,0,167.5,75.05,167.5,167.5v1.5H.5v-169h0Z" transform="translate(170 508) rotate(180)"/>
+  <path class="cls-3" d="M.5.5h1.5c92.44,0,167.5,75.05,167.5,167.5v1.5H.5V.5h0Z" transform="translate(0 170) rotate(-90)"/>
+  <text class="cls-5" transform="translate(203.24 273.53)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-5" transform="translate(198.24 134.91)"><tspan x="0" y="0">N</tspan></text>
+  <text class="cls-5" transform="translate(74.47 134.74)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-5" transform="translate(74.44 273.91)"><tspan x="0" y="0">Y</tspan></text>
+</svg>
