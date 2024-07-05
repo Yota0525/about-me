@@ -1,18 +1,18 @@
-/* コードの文字化け防止 */
+/* コード文字化け防止 */
 @charset "UTF-8";
 
-/* htmlに文字サイズ正反映指定 */
-html {font-size:100%;}
+/* <html>タグ内に文字サイズ正反映指定 */
+html{font-size:100%;}
 
-/* <body>タグ内に 1=書体指定 2=行高指定 3=色指定 */
-body    {font-family:"Noto Sans JP","Noto Serif JP","M PLUS 1p",sans-serif;
+/* <body>タグ内に 1=書体指定 2=行高指定 3=文字色指定 */
+body    {font-family:"Noto Serif JP", sans-serif;
         line-height:1.7;
         color:#432;}
 
-/* <a>タグ内に傍線表示指定 */
+/* <a>タグ内に下線削除指定 */
 a{text-decoration:none;}
 
-/* 画像に最大幅指定 */
+/* <img>タグ内に画像サイズ指定 */
 img{max-width:100%;}
 
 /* 「wrapper」クラス内に 1=最大幅指定 2=外側余白指定 3=内側余白指定 */
@@ -20,26 +20,27 @@ img{max-width:100%;}
         margin:auto;
         padding:0 1.5rem;}
 
-/* 「align-center」クラス内に配置指定 */
+/* 「align-center」クラス内に文字中央配置指定 */
 .align-center{text-align:center;}
 
 /* 「font-english」クラス内に 1=書体指定 2=文字太さ指定 */
-.font-english   {font-family:"M PLUS 2",sans-serif;
+.font-english   {font-family:"M PLUS 1p",sans-serif;
                 font-weight:normal;}
 
-/* 「page-title」「heading-large」クラス内に 1=文字サイズ指定 2=配置指定 */
+/* 「page-title」「heading-large」「heading-medium」クラス内に 1=文字サイズ指定 2=文字中央配置指定 */
 .page-title,
-.heading-large  {font-size:3rem;
+.heading-large,
+.heading-medium {font-size:3rem;
                 text-align:center;}
 
 /* 「page-title」クラス内に 1=外側上部余白指定 2=行高指定 */
 .page-title     {margin-top:2rem;
                 line-height:1.4;}
 
-/* 「header-large」クラス内に外側下部余白指定 */
+/* 「heading-large」クラス内に外側下部余白指定 */
 .heading-large{margin-bottom:1rem;}
 
-/* 「btn」クラス内に 1=サイズ認識指定 2=文字サイズ指定 3=背景色指定 4=文字色指定 5=角形状指定 6=内側余白指定 7=背景色変化指定 */
+/* 「btn」クラス内に 1=余白サイズ認識指定 2=文字サイズ指定 3=背景色指定 4=文字色指定 5=周囲角丸指定 6=内側余白指定 7=背景色変化速度指定 */
 .btn    {display:inline-block;
         font-size:1.5rem;
         background-color:#0bd;
@@ -48,36 +49,36 @@ img{max-width:100%;}
         padding:.75rem 1.5rem;
         transition:.5s;}
 
-/* 「btn」クラス内にホバー時 1=背景色指定 2=拡大指定 3=角度指定 */
+/* 「btn」クラス内にホバー時 1=背景色指定 2=拡大指定 3=回転指定 */
 .btn:hover      {background-color:#0090aa;
                 scale:1.2;
                 rotate:-5deg;}
 
 /* 「page-header」クラス内に内側上部余白指定 */
-.page-header{padding-top:.5rem;}
+.page-header{padding-top:.5px;}
 
 /* 「logo」クラス内に幅指定 */
 .logo{width:210px;}
 
-/* 「main-nav」クラス内に 1=横並び指定 2=水平配置指定 3=要素間余白指定 4=文字サイズ指定 5=リストマーカー表示指定 */
+/* 「main-nav」クラス内に 1=要素横並び配置指定 2=要素水平中央配置指定 3=要素間余白指定 4=文字サイズ指定 5=リストマーカー削除指定 */
 .main-nav       {display:flex;
                 justify-content:center;
                 gap:2.5rem;
                 font-size:1.5rem;
-                list-style-type:none;}
+                list-style:none;}
 
-/* 「main-nav」クラス内の<a>タグ内に色指定 */
+/* 「maion-nav」クラス内の<a>タグ内に文字色指定 */
 .main-nav a{color:#432;}
 
-/* 「main-nav」クラス内の<a>タグ内にホバー時色指定 */
+/* 「main-nav」クラス内の<a>タグ内にホバー時文字色指定 */
 .main-nav a:hover{color:#0bd;}
 
-/* 「cover」クラス内に 1=背景サイズ指定 2=背景配置指定 3=高さ指定 */
+/* 「cover」クラス内に 1=背景サイズ指定 2=背景中央下配置指定 3=高さ指定 */
 .cover  {background-size:cover;
         background-position:center bottom;
         height:800px;}
 
-/* 「sub-cover」クラス内に 1=背景サイズ指定 2=背景位置指定 3=高さ指定 4=外側下部余白指定 */
+/* 「sub-cover」クラス内に 1=背景サイズ指定 2=背景中央下配置指定 3=高さ指定 4=外側下部余白指定 */
 .sub-cover      {background-size:cover;
                 background-position:center bottom;
                 height:528px;
@@ -95,26 +96,71 @@ img{max-width:100%;}
 .about p{margin-bottom:3rem;}
 
 /* 「cover-Memory」クラス内に背景画像指定 */
-.cover-Memory{background-image:url(../images/.jpg);}
+.cover-Memory{background-image:url(../images/red_back.jpg);}
 
-/* 「page-footer」クラス内に 1=背景画像指定 2=背景サイズ指定 3=背景配置指定 4=内側上部余白指定 */
-.page-footer    {background-image:url(../images/haikei-4.jpg);
+/* 「post」クラス内に外側下部余白指定 */
+.post{margin-bottom:3rem;}
+
+/* 「post-title」クラス内に 1=文字太さ指定 2=外側下部余白指定 */
+.post-title     {font-weight:normal;
+                margin-bottom:1.25rem;
+                font-size:2rem;}
+
+/* 「post-info」クラス内に 1=要素横並び指定 2=要素間余白指定 3=外側下部余白指定 */
+.post-info      {display:flex;
+                gap:1rem;
+                margin-bottom:2rem;}
+
+/* 「post-cat」クラス内に 1=要素横並び指定 2=要素間余白指定 3=リストマーカー削除指定 */
+.post-cat       {display:flex;
+                gap:.5rem;
+                list-style:none;}
+
+/* 「post-cat」クラス内の<a>タグ内に 1=文字色指定 2=背景色指定 3=周囲角丸指定 4=文字サイズ指定 5=内側余白指定 */
+.post-cat a     {color:#432;
+                background-color:#faf7f0;
+                border-radius:8px;
+                font-size:.875rem;
+                padding:.5rem .75rem;}
+
+/* 「post-cat」クラス内の<a>タグ内にホバー時背景色指定 */
+.post-cat a:hover{background-color:#c9c2bc;}
+
+/* 「post-date」クラス内に文字サイズ指定 */
+.post-date{font-size:.875rem;}
+
+/* 「post-thumbnail」クラス内に 1=周囲角丸指定 2=外側下部余白指定 */
+.post-thumbnail {border-radius:16px;
+                margin-bottom:1.5rem;}
+
+/* 「post」クラス内の<p>タグ内に 1=外側下部余白指定 2=行高指定 */
+.post p {margin-bottom:1.5rem;
+        line-height:2;}
+
+/* 「page-footer」クラス内に 1=背景画像指定 2=背景サイズ指定 3=背景中央配置指定 4=内側上部余白指定 */
+.page-footer    {background-image:url(../images/blue_back_2.jpg);
                 background-size:cover;
                 background-position:center;
                 padding-top:12rem;}
 
-/* 「info」クラス内に 1=幅指定 2=最大幅指定 3=外側余白指定 4=内側余白指定 5=下線表示指定 */
+/* 「Memory-footer」クラス内に 1=背景画像指定 2=背景サイズ指定 3=背景中央配置指定 4=内側上部余白指定 */
+.Memory-footer  {background-image:url(../images/red_back_2.jpg);
+                background-size:cover;
+                background-position:center;
+                padding-top:12rem;}
+
+/* 「info」クラス内に 1=幅指定 2=最大幅指定 3=外側余白指定 4=内側余白指定 5=傍線表示指定 */
 .info   {width:100%;
         max-width:544px;
         margin:auto;
         padding:0 1.5rem;
         border-spacing:0;}
 
-/* 「info」クラス内の<th><td>タグ内に下線の太さ・スタイル・色指定 */
+/* 「info」クラス内の<th><td>タグ内に傍線の色・スタイル・太さ指定 */
 .info th,
 .info td{border-bottom:1px solid #c9c2bc;}
 
-/* 「info」クラス内の<th>タグ内に 1=文字配置指定 2=文字太さ指定 3=内側余白指定 */
+/* 「info」クラス内の<th>タグ内に 1=文字左配置指定 2=文字太さ指定 3=内側余白指定 */
 .info th{text-align:left;
         font-weight:normal;
         padding:1rem;}
@@ -122,25 +168,67 @@ img{max-width:100%;}
 /* 「info」クラス内の<td>タグ内に内側余白指定 */
 .info td{padding:1rem 0;}
 
-/* 「copyright」クラス内に 1=背景色指定 2=文字位置指定 3=内側余白指定 4=外側上部余白指定 5=文字色指定 */
+/* 「copyright」クラス内に 1=背景色指定 2=文字中央配置指定 3=内側余白指定 4=外側上部余白指定 5=文字色指定 */
 .copyright      {background-color:#432;
                 text-align:center;
                 padding:2rem 0;
                 margin-top:6rem;
                 color:#fff;}
 
-/* CSS切り替え設定・画面切り替え位置指定 1=「page-title」クラス内に文字サイズ指定 2=「heading-large」クラス内に文字サイズ指定　
-3=「page-header」クラス内に配置位置指定・内側上部余白指定 4=「main-nav」クラス内に文字サイズ指定
-5=「cover-home」クラス内に背景画像指定 6=「about」クラス内に外側余白指定 
-7=「page-footer」クラス内に背景画像指定・内側上部余白指定 8=「info」クラス内の<th>タグ内に内側左部余白指定 */
-@media(min-width:800px){.page-title{font-size:5rem;}
+/* 800px以上の画面幅時に 1=「page-title」クラス内に文字サイズ指定 2=「heading-large」クラス内に文字サイズ指定
+3=「sub-cover」クラス内に 1=高さ指定 2=外側下部余白指定
+4=「page-header」クラス内に 1=要素横並び配置指定 2=両端配置指定 3=内側上部余白指定
+5=「main-nav」クラス内に文字サイズ指定 6=「cover-home」クラス内に背景画像指定 7=「about」クラス内に外側余白指定
+8=「cover-Memory」クラス内に背景画像指定
+9=「Memory-contents」クラス内に 1=要素横並び配置指定 2=要素両端配置指定
+10=「post」クラス内に 1=幅指定 2=配置順指定　11=「sidebar」クラス内に 1=幅指定 2=配置順指定
+12=「ad」クラス内に配置順指定
+13=「sidebar」「heading-medium」クラス内に 1=行高指定 2=外側下部余白指定
+14=「page-footer」クラス内に 1=背景画像指定 2=内側上部余白指定
+15=「Memory-footer」クラス内に 1=背景画像指定 2=内側上部余白指定
+16=「info」クラス内の<th>タグ内に内側左部余白指定 */
+@media(min-width:800px) {.page-title{font-size:5rem;}
                         .heading-large{font-size:4rem;}
+                        .sub-cover      {height:400px;
+                                        margin-bottom:6rem;}
                         .page-header    {display:flex;
                                         justify-content:space-between;
                                         padding-top:1.5rem;}
                         .main-nav{font-size:2rem;}
-                        .cover-home{background-image:url(../images/haikei.jpg);}
+                        .cover-home{background-image:url(../images/green_back.jpg);}
                         .about{margin:4rem auto 0;}
-                        .page-footer    {background-image:url(../images/haikei-2.jpg);
+                        .cover-Memory{background-image:url(../images/purple_back.jpg);}
+                        .Memory-contents{display:flex;
+                                        justify-content:space-between;}
+                        .post   {width:40%;
+                                order:2;}
+                        .sidebar{width:22%;
+                                order:3;}
+                        .ad{order:1;}
+                        .sidebar, 
+                        .heading-medium {line-height:1;
+                                        margin-bottom:1rem;}
+                        .page-footer    {background-image:url(../images/green_back_2.jpg);
                                         padding-top:12rem;}
+                        .Memory-footer  {background-image:url(../images/purple_back_2.jpg);}
                         .info th{padding-left:2.5rem;}}
+
+/* 「side-menu」クラス内に 1=リストマーカー削除指定 2=文字中央配置指定 3=外側下部余白指定 */
+.side-menu      {list-style:none;
+                text-align:center;
+                margin-bottom:4rem;}
+
+/* 「side-menu」クラス内の<li>タグ内に下線の太さ・スタイル・色指定 */
+.side-menu li{border-bottom:1px solid #c9c2bc;}
+
+/* 「side-menu」クラス内の<a>タグ内に 1=文字色指定 2=クリック範囲指定 3=内側余白指定 */
+.side-menu a    {color:#432;
+                display:block;
+                padding:1rem;}
+
+/* 「side-menu」クラス内の<a>タグ内にホバー時文字色指定 */
+.side-menu a:hover{color:#0bd;}
+
+/* 「ad」クラス内に 1=幅指定 2=高さ指定 */
+.banner {width:15rem;
+        height:50rem;}

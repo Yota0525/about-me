@@ -1,96 +1,101 @@
-<!DOCTYPE html>
+<!DOCTYPE htnl>
 <html lang="ja">
     <head>
-        <!--文字コード指定-->
-        <meta charset="UTF-8">
-        <!--Webのタイトル設置-->
+        <!--文字コード設定-->
+        <meta charset="utf-8">
+        <!--タイトル設定-->
         <title>自己紹介</title>
-        <!--Webの説明文設置-->
-        <meta name="description" content="歌とバスケを愛する達野耀太">
-        <!--WebのViewport(表示領域)指定-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--説明文設定-->
+        <meta name="description" content="Have A Song On Your Lips">
+        <!--表示領域設定-->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <!--ファビコン設定-->
-        <link rel="icon" type="images/png" href="images/myfabicon.png">
+        <link rel="icon" type="image/png" href="images/myfabicon.png">
 
-        <!--CSSのリセット-->
+        <!--cssのリセット-->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
-        <!--Googleフォント指定-->
+        <!--Googleフォント設定-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
-        <!--CSSの読み込み-->
+        <!--CSS設定-->
         <link rel="stylesheet" href="css/style.css">
     </head>
+
 
     <body>
         <!--<div>タグ内を「cover」「cover-home」とクラス付け-->
         <div class="cover cover-home">
-            <!--<header>タグ内を「page-header」「wrapper」とクラス付け-->
+            <!--<h1>タグ内を「page-header」「wrapper」とクラス付け-->
             <header class="page-header wrapper">
                 <!--<h1>タグ内を「align-center」とクラス付け-->
                 <h1 class="align-center">
-                    <!--ロゴのリンク指定・画像を「logo」とクラス付け・画像のフォルダとファイル指定・代替えテキスト設定-->
+                    <!--ロゴリンク指定・画像に「logo」をクラス付け・フォルダとファイル指定・代替えテキスト指定-->
                     <a href="index.html"><img class="logo" src="images/web_mylogo.svg" alt="ロゴ"></a>
                 </h1>
                 <nav>
-                    <!--<ul>タグ内を「main-nav」「font-english」とクラス付け-->
+                    <!--<ul>クラス内を「main-nav」「font-english」とクラス付け-->
                     <ul class="main-nav font-english">
-                        <!--ナビゲーション設置-->
-                        <li><a href="memory.html">思い出</a></li>
-                        <li><a href="picture.html">写真</a></li>
-                        <li><a href="contact.html">お問い合わせ</a></li>
+                        <!--ナビゲーション設定-->
+                        <li><a href="Memory.html">Memory</a></li>
+                        <li><a href="Picture.html">Picture</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
             <!--<h2>タグ内を「page-title」「font-english」とクラス付け・キャッチコピー設定-->
-            <h2 class="page-title font-english">Song Is Save The World</h2>
+            <h2 class="page-title font-english">Have A Song On Your Lips</h2>
         </div>
 
-        <!--<section>クラス内を「about」とクラス付け-->
+        <!--<section>タグ内を「about」とクラス付け-->
         <section class="about">
-            <!--<h3>クラス内を「heading-large」「font-english」とクラス付け・見出し設定-->
+            <!--<h3>タグ内を「heading-large」「font-english」とクラス付け・タイトル設定-->
             <h3 class="heading-large font-english">自己紹介</h3>
-            <!--本文設定-->
-            <p>私は達野耀太です。歌とバスケを愛する専門学生です。歌もバスケも小5から始めました。今でも合唱団Youthに所属し、バスケもたまにしています。
-                将来はSE(システムエンジニア)になりたいと思っています。</p>
-            <!--<div>タグ内に「align-center」とクラス付け-->
-            <div class="align-center">
-                <!--<a>タグ内を「btn」とクラス付け・リンク設定・ボタン名設定-->
-                <a class="btn" href="picture.html">写真を見る</a>
-            </div>
+                <!--本文設定-->
+                <p>私は専門学生の達野耀太です。趣味は合唱です。特にバラードが好きで、中でも卒業系が好きです。
+                    好きな作詞家は信長貴富さんです。どれも名曲ばかりで、聴いていて飽きません。
+                    また、歌詞がとても魅力的で、歌っていて心が洗われるような気持ちになります。
+                    私は、信長貴富さんの曲を聴きながら寝ることが多く、信長貴富さんの曲で好きな曲は「新しい歌」「未来へ」です。
+                    私にとってとても大切な存在です。
+                </p>
+                <!--<div>タグ内を「align-center」とクラス付け-->
+                <div class="align-center">
+                    <!--<a>タグ内を「btn」とクラス付け・リンク設定・テキスト設定-->
+                    <a href="Picture.html" class="btn">Picture</a>
+                </div>
         </section>
 
         <!--<footer>タグ内を「page-footer」とクラス付け-->
         <footer class="page-footer">
-            <!--<h3>タグ内を「heading-large」「font-english」とクラス付け・見出し設定</h3>-->
-            <h3 class="heading-large font-english">自己情報</h3>
-            <!--<table>タグ内を「info」とクラス付け-->
+            <!--<h3>タグ内を「heading-large」「font-english」とクラス付け・タイトル設定-->
+            <h3 class="heading-large font-english">概要</h3>
+            <!--<table>クラス内を「info」とクラス付け-->
             <table class="info">
-                <!--<tr>=まとまり <th>=小見出し <td>=本文-->
+                <!--<tr>=まとまり <th>=見出し <td>=内容-->
                 <tr>
                     <th>名前</th>
                     <td>達野耀太</td>
                 </tr>
                 <tr>
-                    <th>生年月日</th>
-                    <td>2005年5月25日</td>
-                </tr>
-                <tr>
-                    <th>出身地</th>
-                    <td>東京都</td>
+                    <th>専攻</th>
+                    <td>スーパーITエンジニア</td>
                 </tr>
                 <tr>
                     <th>趣味</th>
                     <td>合唱、バスケ</td>
                 </tr>
+                <tr>
+                    <th>出身地</th>
+                    <td>京都府</td>
+                </tr>
             </table>
-            <!--<div>タグ内を「copyright」とクラス付け-->
+            <!--<div>タグ内に「copyright」とクラス付け-->
             <div class="copyright">
-                <!--コピーライト設定-->
-                <small>&copy;2024 Yota Tatsuno</small>
+                <!--著作権表示-->
+                <small>&copy;2024 Tatsuno Yota</small>
             </div>
         </footer>
     </body>

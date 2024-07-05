@@ -1,84 +1,155 @@
-<!DOCTYPE html>
+<!DOCTYPE htnl>
 <html lang="ja">
     <head>
-        <!--文字コード指定-->
-        <meta charset="UTF-8">
-        <!--Webのタイトル設置-->
-        <title>自己紹介-memory</title>
-        <!--Webの説明文設置-->
-        <meta name="description" content="歌とバスケを愛する達野耀太">
-        <!--WebのViewport(表示領域)指定-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--文字コード設定-->
+        <meta charset="utf-8">
+        <!--タイトル設定-->
+        <title>自己紹介-Memory</title>
+        <!--説明文設定-->
+        <meta name="description" content="Have A Song On Your Lips">
+        <!--表示領域設定-->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <!--ファビコン設定-->
-        <link rel="icon" type="images/png" href="images/myfabicon.png">
+        <link rel="icon" type="image/png" href="images/myfabicon.png">
 
-        <!--CSSのリセット-->
+        <!--cssのリセット-->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
-        <!--Googleフォント指定-->
+        <!--Googleフォント設定-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
-        <!--CSSの読み込み-->
+        <!--CSS設定-->
         <link rel="stylesheet" href="css/style.css">
     </head>
+
 
     <body>
         <!--<div>タグ内を「sub-cover」「cover-Memory」とクラス付け-->
         <div class="sub-cover cover-Memory">
-            <!--<header>タグ内を「page-header」「wrapper」とクラス付け-->
+            <!--<h1>タグ内を「page-header」「wrapper」とクラス付け-->
             <header class="page-header wrapper">
                 <!--<h1>タグ内を「align-center」とクラス付け-->
                 <h1 class="align-center">
-                    <!--ロゴのリンク指定・画像を「logo」とクラス付け・画像のフォルダとファイル指定・代替えテキスト設定-->
+                    <!--ロゴリンク指定・画像に「logo」をクラス付け・フォルダとファイル指定・代替えテキスト指定-->
                     <a href="index.html"><img class="logo" src="images/web_mylogo.svg" alt="ロゴ"></a>
                 </h1>
                 <nav>
-                    <!--<ul>タグ内を「main-nav」「font-english」とクラス付け-->
+                    <!--<ul>クラス内を「main-nav」「font-english」とクラス付け-->
                     <ul class="main-nav font-english">
-                        <!--ナビゲーション設置-->
-                        <li><a href="memory.html">思い出</a></li>
-                        <li><a href="picture.html">写真</a></li>
-                        <li><a href="contact.html">お問い合わせ</a></li>
+                        <!--ナビゲーション設定-->
+                        <li><a href="Memory.html">Memory</a></li>
+                        <li><a href="Picture.html">Picture</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
             <!--<h2>タグ内を「page-title」「font-english」とクラス付け・キャッチコピー設定-->
-            <h2 class="page-title font-english">memory</h2>
+            <h2 class="page-title font-english">Memory</h2>
         </div>
 
+        <!--<main>タグ内を「wrapper」「Memory-contennts」とクラス付け-->
+        <main class="wrapper Memory-contents">
+            <!--<article>タグ内を「post」とクラス付け-->
+            <article class="post">
+                <header>
+                    <!--<h2>タグ内を「post-title」とクラス付け・タイトル設定-->
+                    <h3 class="post-title">TECH入学式</h3>
+                    <!--<div>タグ内を「post-info」とクラス付け-->
+                    <div class="post-info">
+                        <!--<ul>タグ内を「post-cat」とクラス付け-->
+                        <ul class="post-cat">
+                            <!--カテゴリー指定-->
+                            <li><a href="#">スタート</a></li>
+                            <li><a href="#">専門学校</a></li>
+                        </ul>
+                        <!--<time>タグ内を「post-date」とクラス付け・日付設定-->
+                        <time class="post-date" datetime="2024-05-25">2024年4月25日</time>
+                    </div>
+                </header>
+                <!--画像に「post-thumbnail」をクラス付け・フォルダとファイル指定・代替えテキスト指定-->
+                <img class="post-thumbnail" src="images/TECH入学式_picture.JPG" alt="TECH入学式">
+                <!--本文追加-->
+                <p>
+                    TECHの入学式は、私にとって初めての<br>姉妹校との合同開催の入学式でした。<br>私は、これからのTECHでの生活を<br>楽しみにこの日を迎えました。<br>
+                    友達と一緒にとても楽しく入学式<br>に出席することができました。<br>この日は、私にとって一生の思い出となりました。
+                </p>
+                <p>
+                    日時:2024年4月25日(木)13:00~<br>
+                    場所:大阪城ホール
+                </p>
+                <p>
+                    当日は会場付近で友達と待ち合わせ、近くのたこ焼き屋でたこ焼きを食べて入学式に向かいました。<br>
+                    入学式では、各校の校長先生の挨拶や、名誉教諭の先生方の挨拶がありました。<br>
+                    その後、各校先輩の発表があり、ダンスなどの実演や<br>プレゼンテーションをしてくださいました。<br>
+                    卒業後最前線で活躍されているアーティストさんの<br>サプライズ出演もあり、とても刺激になりました。<br>
+                    最後に、私たち新入生に向けての<br>メッセージでとても感動しました。
+                </p>
+            </article>
 
+            <!--<aside>タグ内に「sidebar」をクラス付け-->
+            <aside class="sidebar">
+                <!--<h3>タグ内に「heading-medium」「font-english」をクラス付け・タイトル設定-->
+                <h3 class="heading-medium font-english">項目</h3>
+                <!--<ul>タグ内に「side-menu」をクラス付け-->
+                <ul class="side-menu">
+                    <!--リンク設定・項目設定-->
+                    <li><a href="#">KYOTOーTECH</a></li>
+                    <li><a href="#">合唱団Youth</a></li>
+                    <li><a href="#">地元メンバー</a></li>
+                    <li><a href="#">バイト</a></li>
+                </ul>
 
-        <!--<footer>タグ内を「page-footer」とクラス付け-->
-        <footer class="page-footer">
-            <!--<h3>タグ内を「heading-large」「font-english」とクラス付け・見出し設定</h3>-->
-            <h3 class="heading-large font-english">自己情報</h3>
-            <!--<table>タグ内を「info」とクラス付け-->
+                <!--<h3>タグ内に「heading-medium」「font-english」をクラス付け・タイトル設定-->
+                <h3 class="heading-medium font-english">月別</h3>
+                <!--<ul>タグ内に「side-menu」をクラス付け-->
+                <ul class="side-menu">
+                    <!--リンク設定・項目設定-->
+                    <li><a href="#">2024年4月</a></li>
+                    <li><a href="#">2024年5月</a></li>
+                    <li><a href="#">2024年6月</a></li>
+                    <li><a href="#">2024年7月</a></li>
+                </ul>
+            </aside>
+
+            <!--<aside>タグ内に「ad」をクラス付け-->
+            <aside class="ad">
+                <!--バナー画像フォルダとファイル指定・代替えテキスト指定-->
+                <img src="images/mybanner.jpg" img class="banner" alt="広告">
+            </aside>
+        </main>
+
+        <!--<footer>タグ内を「Memory-footer」とクラス付け-->
+        <footer class="Memory-footer">
+            <!--<h3>タグ内を「heading-large」「font-english」とクラス付け・タイトル設定-->
+            <h3 class="heading-large font-english">概要</h3>
+            <!--<table>クラス内を「info」とクラス付け-->
             <table class="info">
-                <!--<tr>=まとまり <th>=小見出し <td>=本文-->
+                <!--<tr>=まとまり <th>=見出し <td>=内容-->
                 <tr>
                     <th>名前</th>
                     <td>達野耀太</td>
                 </tr>
                 <tr>
-                    <th>生年月日</th>
-                    <td>2005年5月25日</td>
-                </tr>
-                <tr>
-                    <th>出身地</th>
-                    <td>東京都</td>
+                    <th>専攻</th>
+                    <td>スーパーITエンジニア</td>
                 </tr>
                 <tr>
                     <th>趣味</th>
                     <td>合唱、バスケ</td>
                 </tr>
+                <tr>
+                    <th>出身地</th>
+                    <td>京都府</td>
+                </tr>
             </table>
-            <!--<div>タグ内を「copyright」とクラス付け-->
+
+            <!--<div>タグ内に「copyright」とクラス付け-->
             <div class="copyright">
-                <!--コピーライト設定-->
-                <small>&copy;2024 Yota Tatsuno</small>
+                <!--著作権表示-->
+                <small>&copy;2024 Tatsuno Yota</small>
             </div>
         </footer>
     </body>
