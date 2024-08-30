@@ -4,7 +4,7 @@
         <!--文字コード設定-->
         <meta charset="utf-8">
         <!--タイトル設定-->
-        <title>自己紹介</title>
+        <title>自己紹介-Contact-form</title>
         <!--説明文設定-->
         <meta name="description" content="Have A Song On Your Lips">
         <!--表示領域設定-->
@@ -27,8 +27,8 @@
 
 
     <body>
-        <!--<div>タグ内を「cover」「cover-home」とクラス付け-->
-        <div class="cover cover-home">
+        <!--<div>タグ内を「sub-cover」「cover-Contact-form」とクラス付け-->
+        <div class="sub-cover cover-Contact-form">
             <!--<h1>タグ内を「page-header」「wrapper」とクラス付け-->
             <header class="page-header wrapper">
                 <!--<h1>タグ内を「align-center」とクラス付け-->
@@ -48,29 +48,53 @@
                 </nav>
             </header>
             <!--<h2>タグ内を「page-title」「font-english」とクラス付け・キャッチコピー設定-->
-            <h2 class="page-title font-english">Have A Song On Your Lips</h2>
+            <h2 class="page-title font-english">Contact-form</h2>
         </div>
 
-        <!--<section>タグ内を「about」とクラス付け-->
-        <section class="about">
-            <!--<h3>タグ内を「heading-large」「font-english」とクラス付け・タイトル設定-->
-            <h3 class="heading-large font-english">自己紹介</h3>
-                <!--本文設定-->
-                <p>私は専門学生の達野耀太です。趣味は合唱です。特にバラードが好きで、中でも卒業系が好きです。
-                    好きな作詞家は信長貴富さんです。どれも名曲ばかりで、聴いていて飽きません。
-                    また、歌詞がとても魅力的で、歌っていて心が洗われるような気持ちになります。
-                    私は、信長貴富さんの曲を聴きながら寝ることが多く、信長貴富さんの曲で好きな曲は「新しい歌」「未来へ」です。
-                    私にとってとても大切な存在です。
-                </p>
-                <!--<div>タグ内を「align-center」とクラス付け-->
-                <div class="align-center">
-                    <!--<a>タグ内を「btn」とクラス付け・リンク設定・テキスト設定-->
-                    <a href="Picture.html" class="btn">Picture</a>
+        <!--<div>タグ内を「form-container」とクラス付け-->
+        <div class="form-container">
+                <!--<div>タグ内を「form-group」とクラス付け・for=項目名設定・type=入力欄設定・id=id指定
+                    name=フォーム名指定・required=必須指定・value=選択肢設定・textarea=入力枠設定-->
+                <div class="form-group">
+                    <label for="name">名前*</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-        </section>
+                <div class="form-group">
+                    <label for="email">メールアドレス*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">電話番号</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="age">年齢</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div class="form-group">
+                    <label for="gender">性別*</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">選択してください</option>
+                        <option value="male">男性</option>
+                        <option value="female">女性</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="affiliation">所属先</label>
+                    <input type="text" id="affiliation" name="affiliation">
+                </div>
+                <div class="form-group">
+                    <label for="content">内容*</label>
+                    <textarea id="content" name="content" required></textarea>
+                </div>
+                <!--<botton>タグ内に送信タイプ設定・「submit-btn」をクラス付け・テキスト設定-->
+                <button type="submit" class="submit-btn">送信</button>
+            </form>
+        </div>
 
-        <!--<footer>タグ内を「page-footer」とクラス付け-->
-        <footer class="page-footer">
+        <!--<footer>タグ内を「Contact-form-footer」とクラス付け-->
+        <footer class="Contact-form-footer">
             <!--<h3>タグ内を「heading-large」「font-english」とクラス付け・タイトル設定-->
             <h3 class="heading-large font-english">概要</h3>
             <!--<table>クラス内を「info」とクラス付け-->
@@ -93,6 +117,7 @@
                     <td>京都府</td>
                 </tr>
             </table>
+
             <!--<div>タグ内に「copyright」とクラス付け-->
             <div class="copyright">
                 <!--著作権表示-->

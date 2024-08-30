@@ -2,233 +2,578 @@
 @charset "UTF-8";
 
 /* <html>タグ内に文字サイズ正反映指定 */
-html{font-size:100%;}
+html {
+        font-size: 100%;
+}
 
 /* <body>タグ内に 1=書体指定 2=行高指定 3=文字色指定 */
-body    {font-family:"Noto Serif JP", sans-serif;
-        line-height:1.7;
-        color:#432;}
+body {
+        font-family: "Noto Serif JP", sans-serif;
+        line-height: 1.7;
+        color: #432;
+}
 
 /* <a>タグ内に下線削除指定 */
-a{text-decoration:none;}
+a {
+        text-decoration: none;
+}
 
 /* <img>タグ内に画像サイズ指定 */
-img{max-width:100%;}
+img {
+        max-width: 100%;
+}
 
 /* 「wrapper」クラス内に 1=最大幅指定 2=外側余白指定 3=内側余白指定 */
-.wrapper{max-width:1120px;
-        margin:auto;
-        padding:0 1.5rem;}
+.wrapper {
+        max-width: 1120px;
+        margin: auto;
+        padding: 0 1.5rem;
+}
 
 /* 「align-center」クラス内に文字中央配置指定 */
-.align-center{text-align:center;}
+.align-center {
+        text-align: center;
+}
 
 /* 「font-english」クラス内に 1=書体指定 2=文字太さ指定 */
-.font-english   {font-family:"M PLUS 1p",sans-serif;
-                font-weight:normal;}
+.font-english {
+        font-family: "M PLUS 1p", sans-serif;
+        font-weight: normal;
+}
 
 /* 「page-title」「heading-large」「heading-medium」クラス内に 1=文字サイズ指定 2=文字中央配置指定 */
 .page-title,
 .heading-large,
-.heading-medium {font-size:3rem;
-                text-align:center;}
+.heading-medium {
+        font-size: 3rem;
+        text-align: center;
+}
 
 /* 「page-title」クラス内に 1=外側上部余白指定 2=行高指定 */
-.page-title     {margin-top:2rem;
-                line-height:1.4;}
+.page-title {
+        margin-top: 2rem;
+        line-height: 1.4;
+}
 
 /* 「heading-large」クラス内に外側下部余白指定 */
-.heading-large{margin-bottom:1rem;}
+.heading-large {
+        margin-bottom: 1rem;
+}
 
 /* 「btn」クラス内に 1=余白サイズ認識指定 2=文字サイズ指定 3=背景色指定 4=文字色指定 5=周囲角丸指定 6=内側余白指定 7=背景色変化速度指定 */
-.btn    {display:inline-block;
-        font-size:1.5rem;
-        background-color:#0bd;
-        color:#fff;
-        border-radius:8px;
-        padding:.75rem 1.5rem;
-        transition:.5s;}
+.btn {
+        display: inline-block;
+        font-size: 1.5rem;
+        background-color: #0bd;
+        color: #fff;
+        border-radius: 8px;
+        padding: .75rem 1.5rem;
+        transition: .5s;
+}
 
 /* 「btn」クラス内にホバー時 1=背景色指定 2=拡大指定 3=回転指定 */
-.btn:hover      {background-color:#0090aa;
-                scale:1.2;
-                rotate:-5deg;}
+.btn:hover {
+        background-color: #0090aa;
+        scale: 1.2;
+        rotate: -5deg;
+}
+
+/* 「iframe」クラス内に幅指定 */
+iframe {
+        width: 100%;
+}
 
 /* 「page-header」クラス内に内側上部余白指定 */
-.page-header{padding-top:.5px;}
+.page-header {
+        padding-top: .5px;
+}
 
 /* 「logo」クラス内に幅指定 */
-.logo{width:210px;}
+.logo {
+        width: 210px;
+}
 
 /* 「main-nav」クラス内に 1=要素横並び配置指定 2=要素水平中央配置指定 3=要素間余白指定 4=文字サイズ指定 5=リストマーカー削除指定 */
-.main-nav       {display:flex;
-                justify-content:center;
-                gap:2.5rem;
-                font-size:1.5rem;
-                list-style:none;}
+.main-nav {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        font-size: 1.5rem;
+        list-style: none;
+}
 
 /* 「maion-nav」クラス内の<a>タグ内に文字色指定 */
-.main-nav a{color:#432;}
+.main-nav a {
+        color: #432;
+}
 
 /* 「main-nav」クラス内の<a>タグ内にホバー時文字色指定 */
-.main-nav a:hover{color:#0bd;}
+.main-nav a:hover {
+        color: #0bd;
+}
 
 /* 「cover」クラス内に 1=背景サイズ指定 2=背景中央下配置指定 3=高さ指定 */
-.cover  {background-size:cover;
-        background-position:center bottom;
-        height:800px;}
+.cover {
+        background-size: cover;
+        background-position: center bottom;
+        height: 800px;
+}
 
 /* 「sub-cover」クラス内に 1=背景サイズ指定 2=背景中央下配置指定 3=高さ指定 4=外側下部余白指定 */
-.sub-cover      {background-size:cover;
-                background-position:center bottom;
-                height:528px;
-                margin-bottom:4rem;}
-
-/* 「cover-home」クラス内に背景画像指定 */
-.cover-home{background-image:url(../images/blue_back.jpg);}
+.sub-cover {
+        background-size: cover;
+        background-position: center bottom;
+        height: 528px;
+        margin-bottom: 4rem;
+}
 
 /* 「about」クラス内に 1=最大幅指定 2=内側余白指定 3=外側余白指定 */
-.about  {max-width:736px;
-        padding:0 1.5rem;
-        margin:3rem auto 4rem;}
+.about {
+        max-width: 736px;
+        padding: 0 1.5rem;
+        margin: 3rem auto 4rem;
+}
 
 /* 「about」クラス内の<p>タグ内に外側下部余白指定 */
-.about p{margin-bottom:3rem;}
+.about p {
+        margin-bottom: 3rem;
+}
 
-/* 「cover-Memory」クラス内に背景画像指定 */
-.cover-Memory{background-image:url(../images/red_back.jpg);}
+/* 「grid」クラス内に 1=タイル型配置指定 2=要素間余白指定 3=表配置指定 4=文字中央配置指定 */
+.grid {
+        display: grid;
+        gap: 2rem 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+}
+
+/* 「item」クラス内の画像に 1=比率指定 2=トリミング指定 3=角丸指定 */
+.item img {
+        aspect-ratio: 1/1.3;
+        object-fit: cover;
+        border-radius: 16px;
+}
+
+/* 「item」クラス内の<p>タグ内に文字サイズ指定 */
+.item p {
+        font-size: .875rem;
+}
 
 /* 「post」クラス内に外側下部余白指定 */
-.post{margin-bottom:3rem;}
+.post {
+        margin-bottom: 3rem;
+}
 
 /* 「post-title」クラス内に 1=文字太さ指定 2=外側下部余白指定 */
-.post-title     {font-weight:normal;
-                margin-bottom:1.25rem;
-                font-size:2rem;}
+.post-title {
+        font-weight: normal;
+        margin-bottom: 1.25rem;
+        font-size: 2rem;
+}
 
 /* 「post-info」クラス内に 1=要素横並び指定 2=要素間余白指定 3=外側下部余白指定 */
-.post-info      {display:flex;
-                gap:1rem;
-                margin-bottom:2rem;}
+.post-info {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+}
 
 /* 「post-cat」クラス内に 1=要素横並び指定 2=要素間余白指定 3=リストマーカー削除指定 */
-.post-cat       {display:flex;
-                gap:.5rem;
-                list-style:none;}
+.post-cat {
+        display: flex;
+        gap: .5rem;
+        list-style: none;
+}
 
 /* 「post-cat」クラス内の<a>タグ内に 1=文字色指定 2=背景色指定 3=周囲角丸指定 4=文字サイズ指定 5=内側余白指定 */
-.post-cat a     {color:#432;
-                background-color:#faf7f0;
-                border-radius:8px;
-                font-size:.875rem;
-                padding:.5rem .75rem;}
+.post-cat a {
+        color: #432;
+        background-color: #faf7f0;
+        border-radius: 8px;
+        font-size: .875rem;
+        padding: .5rem .75rem;
+}
 
 /* 「post-cat」クラス内の<a>タグ内にホバー時背景色指定 */
-.post-cat a:hover{background-color:#c9c2bc;}
+.post-cat a:hover {
+        background-color: #c9c2bc;
+}
 
 /* 「post-date」クラス内に文字サイズ指定 */
-.post-date{font-size:.875rem;}
+.post-date {
+        font-size: .875rem;
+}
 
 /* 「post-thumbnail」クラス内に 1=周囲角丸指定 2=外側下部余白指定 */
-.post-thumbnail {border-radius:16px;
-                margin-bottom:1.5rem;}
+.post-thumbnail {
+        border-radius: 16px;
+        margin-bottom: 1.5rem;
+}
 
 /* 「post」クラス内の<p>タグ内に 1=外側下部余白指定 2=行高指定 */
-.post p {margin-bottom:1.5rem;
-        line-height:2;}
-
-/* 「page-footer」クラス内に 1=背景画像指定 2=背景サイズ指定 3=背景中央配置指定 4=内側上部余白指定 */
-.page-footer    {background-image:url(../images/blue_back_2.jpg);
-                background-size:cover;
-                background-position:center;
-                padding-top:12rem;}
-
-/* 「Memory-footer」クラス内に 1=背景画像指定 2=背景サイズ指定 3=背景中央配置指定 4=内側上部余白指定 */
-.Memory-footer  {background-image:url(../images/red_back_2.jpg);
-                background-size:cover;
-                background-position:center;
-                padding-top:12rem;}
+.post p {
+        margin-bottom: 1.5rem;
+        line-height: 2;
+}
 
 /* 「info」クラス内に 1=幅指定 2=最大幅指定 3=外側余白指定 4=内側余白指定 5=傍線表示指定 */
-.info   {width:100%;
-        max-width:544px;
-        margin:auto;
-        padding:0 1.5rem;
-        border-spacing:0;}
+.info {
+        width: 100%;
+        max-width: 544px;
+        margin: auto;
+        padding: 0 1.5rem;
+        border-spacing: 0;
+}
 
 /* 「info」クラス内の<th><td>タグ内に傍線の色・スタイル・太さ指定 */
 .info th,
-.info td{border-bottom:1px solid #c9c2bc;}
+.info td {
+        border-bottom: 1px solid #c9c2bc;
+}
 
 /* 「info」クラス内の<th>タグ内に 1=文字左配置指定 2=文字太さ指定 3=内側余白指定 */
-.info th{text-align:left;
-        font-weight:normal;
-        padding:1rem;}
+.info th {
+        text-align: left;
+        font-weight: normal;
+        padding: 1rem;
+}
 
 /* 「info」クラス内の<td>タグ内に内側余白指定 */
-.info td{padding:1rem 0;}
+.info td {
+        padding: 1rem 0;
+}
 
 /* 「copyright」クラス内に 1=背景色指定 2=文字中央配置指定 3=内側余白指定 4=外側上部余白指定 5=文字色指定 */
-.copyright      {background-color:#432;
-                text-align:center;
-                padding:2rem 0;
-                margin-top:6rem;
-                color:#fff;}
+.copyright {
+        background-color: #432;
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 6rem;
+        color: #fff;
+}
+
+/* 「location」クラス内に外側下部余白指定 */
+.location {
+        margin-bottom: 3.5rem;
+}
+
+/* 「location-info」クラス内に外側下部余白指定 */
+.location-info {
+        margin-bottom: 2rem;
+}
+
+/* 「location-info」クラス内の<info>タグ内に内側余白指定 */
+.location-info info {
+        padding: 0;
+}
+
+/* 「form」クラス内に 1=最大幅指定 2=背景色指定 3=角丸指定 4=内側余白指定 5=外側余白指定 */
+.form {
+        max-width: 916px;
+        background-color: #faf7f0;
+        border-radius: 48px;
+        padding: 1.5rem 2.5rem 2.5rem;
+        margin: 0 auto 2rem;
+}
+
+/* 「form」クラス内の<p>タグ内に外側余白指定 */
+.form p {
+        margin-bottom: 1rem 0 2rem;
+}
+
+/* 「form-container」クラス内に 1=背景色指定 2=内側余白指定 3=角丸指定 4=影指定 5=最大幅指定 6=幅指定 7=中央配置指定 */
+.form-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+}
+
+/* 「form-group」クラス内に外側下部余白指定 */
+.form-group {
+        margin-bottom: 15px;
+}
+
+/* 「form-group」クラス内の<label>タグ内に 1=表示指定 2=文字サイズ指定 3=外側下部余白指定 4=文字太さ指定 */
+.form-group label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-weight: 600;
+}
+
+
+/* 「form-group」クラス内の<input><select><textarea>タグ内に 1=幅指定 2=内側余白指定 3=文字サイズ指定 4=ボーダー指定 5=角丸指定 6=ボックスサイズ指定 7=背景色指定 */
+.form-group input,
+.form-group select,
+.form-group textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #d1d1d1;
+        border-radius: 8px;
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+}
+
+/* 「form-group」クラス内の<input><select><textarea>タグ内にフォーカス時 1=アウトライン削除指定 2=ボーダー色指定 3=背景色指定 */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+        outline: none;
+        border-color: #007aff;
+        background-color: #ffffff;
+}
+
+/* 「form-group」クラス内の<textarea>タグ内に 1=リサイズ指定 2=高さ指定 */
+.form-group textarea {
+        resize: vertical;
+        height: 100px;
+}
+
+/* 「submit-btn」クラス内に 1=背景色指定 2=文字色指定 3=内側余白指定 4=ボーダー指定 5=角丸指定 6=文字サイズ指定 7=カーソル指定 8=幅指定 9=背景色変化速度指定 */
+.submit-btn {
+        background-color: #007aff;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s;
+}
+
+/* 「submit-btn」クラス内にホバー時背景色指定 */
+.submit-btn:hover {
+        background-color: #005bb5;
+}
+
+.cover-home {
+        background-image: url(../images/dairiseki_back.jpg);
+}
+
+.cover-Memory {
+        background-image: url(../images/mizutama_back.jpg);
+}
+
+.cover-Picture {
+        background-image: url(../images/purple_back.jpg);
+}
+
+.cover-Contact {
+        background-image: url(../images/reinbow_back.jpg);
+}
+
+.cover-Contact-form {
+        background-image: url(../images/yellowgreen_back.jpg);
+}
+
+.page-footer {
+        background-image: url(../images/dairiseki_back_2.jpg);
+        padding-top: 12rem;
+        background-size: cover;
+}
+
+.Picture-footer {
+        background-image: url(../images/purple_back_2.jpg);
+        padding-top: 12rem;
+        background-size: cover;
+}
+
+.Memory-footer {
+        background-image: url(../images/mizutama_back_2.jpg);
+        padding-top: 12rem;
+        background-size: cover;
+}
+
+.Contact-footer {
+        background-image: url(../images/reinbow_back_2.jpg);
+        padding-top: 12rem;
+        background-size: cover;
+}
+
+.Contact-form-footer {
+        background-image: url(../images/yellowgreen_back_2.jpg);
+        padding-top: 12rem;
+        background-size: cover;
+}
 
 /* 800px以上の画面幅時に 1=「page-title」クラス内に文字サイズ指定 2=「heading-large」クラス内に文字サイズ指定
 3=「sub-cover」クラス内に 1=高さ指定 2=外側下部余白指定
 4=「page-header」クラス内に 1=要素横並び配置指定 2=両端配置指定 3=内側上部余白指定
-5=「main-nav」クラス内に文字サイズ指定 6=「cover-home」クラス内に背景画像指定 7=「about」クラス内に外側余白指定
-8=「cover-Memory」クラス内に背景画像指定
-9=「Memory-contents」クラス内に 1=要素横並び配置指定 2=要素両端配置指定
-10=「post」クラス内に 1=幅指定 2=配置順指定　11=「sidebar」クラス内に 1=幅指定 2=配置順指定
-12=「ad」クラス内に配置順指定
-13=「sidebar」「heading-medium」クラス内に 1=行高指定 2=外側下部余白指定
-14=「page-footer」クラス内に 1=背景画像指定 2=内側上部余白指定
-15=「Memory-footer」クラス内に 1=背景画像指定 2=内側上部余白指定
-16=「info」クラス内の<th>タグ内に内側左部余白指定 */
-@media(min-width:800px) {.page-title{font-size:5rem;}
-                        .heading-large{font-size:4rem;}
-                        .sub-cover      {height:400px;
-                                        margin-bottom:6rem;}
-                        .page-header    {display:flex;
-                                        justify-content:space-between;
-                                        padding-top:1.5rem;}
-                        .main-nav{font-size:2rem;}
-                        .cover-home{background-image:url(../images/green_back.jpg);}
-                        .about{margin:4rem auto 0;}
-                        .cover-Memory{background-image:url(../images/purple_back.jpg);}
-                        .Memory-contents{display:flex;
-                                        justify-content:space-between;}
-                        .post   {width:40%;
-                                order:2;}
-                        .sidebar{width:22%;
-                                order:3;}
-                        .ad{order:1;}
-                        .sidebar, 
-                        .heading-medium {line-height:1;
-                                        margin-bottom:1rem;}
-                        .page-footer    {background-image:url(../images/green_back_2.jpg);
-                                        padding-top:12rem;}
-                        .Memory-footer  {background-image:url(../images/purple_back_2.jpg);}
-                        .info th{padding-left:2.5rem;}}
+5=「main-nav」クラス内に文字サイズ指定 7=「about」クラス内に外側余白指定
+9=「grid」クラス内に 1=要素間余白指定 2=３つずつ配置指定
+10=「item」クラス内の画像に外側下部余白指定　11=「item」クラス内の<p>タグ内に文字サイズ指定
+12=「item-big」クラス内に 1=比率指定 2=比率指定
+13=「item-big」クラス内の画像に 1=高さ指定 2=幅指定
+14=「Memory-contents」クラス内に 1=要素横並び配置指定 2=要素両端配置指定
+18=「post」クラス内に 1=幅指定 2=配置順指定　19=「sidebar」クラス内に 1=幅指定 2=配置順指定
+20=「ad」クラス内に配置順指定
+21=「sidebar」「heading-medium」クラス内に 1=行高指定 2=外側下部余白指定
+22=「page-footer」クラス内に 1=背景画像指定 2=内側上部余白指定
+23=「Memory-footer」クラス内に 1=背景画像指定 2=内側上部余白指定
+24=「info」クラス内の<th>タグ内に内側左部余白指定 */
+@media(min-width:800px) {
+        .page-title {
+                font-size: 5rem;
+        }
+
+        .heading-large {
+                font-size: 4rem;
+        }
+
+        .sub-cover {
+                height: 400px;
+                margin-bottom: 6rem;
+        }
+
+        .page-header {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 1.5rem;
+        }
+
+        .cover-home {
+                background-image: url(../images/blue_back.jpg);
+        }
+
+        .cover-Memory {
+                background-image: url(../images/green_back.jpg);
+        }
+
+        .cover-Picture {
+                background-image: url(../images/pink_back.jpg);
+        }
+
+        .cover-Contact {
+                background-image: url(../images/yellow_back.jpg);
+        }
+
+        .cover-Contact-form {
+                background-image: url(../images/red_back.jpg);
+        }
+
+        .main-nav {
+                font-size: 2rem;
+        }
+
+        .about {
+                margin: 4rem auto 0;
+        }
+
+        .grid {
+                gap: 3rem 2rem;
+                grid-template-columns: repeat(3, 1fr);
+        }
+
+        .page-footer {
+                background-image: url(../images/blue_back_2.jpg);
+                padding-top: 12rem;
+                background-size: cover;
+        }
+
+        .Memory-footer {
+                background-image: url(../images/green_back_2.jpg);
+                padding-top: 12rem;
+                background-size: cover;
+        }
+
+        .Picture-footer {
+                background-image: url(../images/Pink\ _back_2.jpg);
+                padding-top: 12rem;
+                background-size: cover;
+        }
+
+        .Contact-footer {
+                background-image: url(../images/yellow_back_2.jpg);
+                padding-top: 12rem;
+                background-size: cover;
+        }
+
+        .Contact-form-footer {
+                background-image: url(../images/red_back_2.jpg);
+                padding-top: 12rem;
+                background-size: cover;
+        }
+
+        .item img {
+                margin-bottom: .5rem;
+        }
+
+        .item p {
+                font-size: 1rem;
+        }
+
+        .item-big {
+                grid-column: 1/3;
+                grid-row: 1/3;
+        }
+
+        .item-big img {
+                height: 96.5%;
+                width: 100%;
+        }
+
+        .Memory-contents {
+                display: flex;
+                justify-content: space-between;
+        }
+
+        .post {
+                width: 40%;
+                order: 2;
+        }
+
+        .sidebar {
+                width: 22%;
+                order: 3;
+        }
+
+        .ad {
+                order: 1;
+        }
+
+        .sidebar,
+        .heading-medium {
+                line-height: 1;
+                margin-bottom: 1rem;
+        }
+
+        .info th {
+                padding-left: 2.5rem;
+        }
+}
 
 /* 「side-menu」クラス内に 1=リストマーカー削除指定 2=文字中央配置指定 3=外側下部余白指定 */
-.side-menu      {list-style:none;
-                text-align:center;
-                margin-bottom:4rem;}
+.side-menu {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 4rem;
+}
 
 /* 「side-menu」クラス内の<li>タグ内に下線の太さ・スタイル・色指定 */
-.side-menu li{border-bottom:1px solid #c9c2bc;}
+.side-menu li {
+        border-bottom: 1px solid #c9c2bc;
+}
 
 /* 「side-menu」クラス内の<a>タグ内に 1=文字色指定 2=クリック範囲指定 3=内側余白指定 */
-.side-menu a    {color:#432;
-                display:block;
-                padding:1rem;}
+.side-menu a {
+        color: #432;
+        display: block;
+        padding: 1rem;
+}
 
 /* 「side-menu」クラス内の<a>タグ内にホバー時文字色指定 */
-.side-menu a:hover{color:#0bd;}
+.side-menu a:hover {
+        color: #0bd;
+}
 
 /* 「ad」クラス内に 1=幅指定 2=高さ指定 */
-.banner {width:15rem;
-        height:50rem;}
+.banner {
+        width: 15rem;
+        height: 50rem;
+}
